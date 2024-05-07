@@ -228,13 +228,16 @@ public class ModelManagementFragment extends Fragment
 
     binding.addModel.setOnClickListener(
         v -> {
-          if (!PermissionUtils.hasStoragePermission(requireActivity()))
-            requestPermissionLauncher.launch(Constants.PERMISSION_STORAGE);
-          else if (PermissionUtils.shouldShowRational(
-              requireActivity(), Constants.PERMISSION_STORAGE)) {
-            PermissionUtils.showStoragePermissionModelManagementToast(requireActivity());
-          } else openPicker();
-        });
+//          if (!PermissionUtils.hasStoragePermission(requireActivity()))
+//            requestPermissionLauncher.launch(Constants.PERMISSION_STORAGE);
+//          else if (PermissionUtils.shouldShowRational(
+//              requireActivity(), Constants.PERMISSION_STORAGE)) {
+//            PermissionUtils.showStoragePermissionModelManagementToast(requireActivity());
+//          } else
+              openPicker();
+        }
+        );
+
   }
 
   private void showModels(List<Model> modelList) {

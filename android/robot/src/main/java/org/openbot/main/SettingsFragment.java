@@ -98,8 +98,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             if (storage.isChecked())
               PermissionUtils.startInstalledAppDetailsActivity(requireActivity());
             else {
-              if (!PermissionUtils.shouldShowRational(
-                  requireActivity(), Constants.PERMISSION_STORAGE)) {
+              if (!PermissionUtils.shouldShowRational(requireActivity(), Constants.PERMISSION_STORAGE)) {
                 PermissionUtils.startInstalledAppDetailsActivity(requireActivity());
               } else requestPermissionLauncher.launch(new String[] {Constants.PERMISSION_STORAGE});
             }
