@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
@@ -187,7 +188,7 @@ public class SettingsFragment extends PreferenceFragmentCompat {
   }
 
   private void restartApp() {
-    new Handler()
+    new Handler(Looper.getMainLooper())
         .postDelayed(
             () -> {
               final PackageManager pm = requireActivity().getPackageManager();
