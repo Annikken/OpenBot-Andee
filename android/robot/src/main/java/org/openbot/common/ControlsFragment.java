@@ -19,6 +19,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import java.io.File;
 import java.util.List;
+import java.util.Objects;
 import java.util.Set;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
@@ -103,7 +104,8 @@ public abstract class ControlsFragment extends Fragment implements ServerListene
             this,
             (requestKey, result) -> {
               KeyEvent event = result.getParcelable(Constants.DATA);
-              if (KeyEvent.ACTION_UP == event.getAction()) {
+                assert event != null;
+                if (KeyEvent.ACTION_UP == event.getAction()) {
                 processKeyEvent(result.getParcelable(Constants.DATA));
               }
               Control newControl =
@@ -218,13 +220,13 @@ public abstract class ControlsFragment extends Fragment implements ServerListene
         case KeyEvent.KEYCODE_BUTTON_THUMBL:
           processControllerKeyData(Constants.CMD_SPEED_DOWN);
           audioPlayer.playSpeedMode(
-              voice, Enums.SpeedMode.getByID(preferencesManager.getSpeedMode()));
+              voice, Objects.requireNonNull(Enums.SpeedMode.getByID(preferencesManager.getSpeedMode())));
           break;
         case KeyEvent.KEYCODE_BUTTON_THUMBR:
           processControllerKeyData(Constants.CMD_SPEED_UP);
 
           audioPlayer.playSpeedMode(
-              voice, Enums.SpeedMode.getByID(preferencesManager.getSpeedMode()));
+              voice, Objects.requireNonNull(Enums.SpeedMode.getByID(preferencesManager.getSpeedMode())));
           break;
 
         default:
@@ -292,9 +294,7 @@ public abstract class ControlsFragment extends Fragment implements ServerListene
 
           processControllerKeyData(commandType);
         },
-        error -> {
-          Log.d(null, "Error occurred in ControllerToBotEventBus: " + error);
-        },
+        error -> Log.d(null, "Error occurred in ControllerToBotEventBus: " + error),
         event -> event.has("command") || event.has("driveCmd") || event.has("server") // filter out everything else
         );
   }

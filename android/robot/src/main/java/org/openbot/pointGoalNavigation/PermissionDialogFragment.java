@@ -17,7 +17,7 @@ public class PermissionDialogFragment extends DialogFragment {
   public Dialog onCreateDialog(@Nullable Bundle savedInstanceState) {
 
     MaterialAlertDialogBuilder builder =
-        new MaterialAlertDialogBuilder(getActivity())
+        new MaterialAlertDialogBuilder(requireActivity())
             .setTitle("Permission")
             .setMessage(
                 getResources().getString(R.string.camera_permission_denied)

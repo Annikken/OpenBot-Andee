@@ -166,7 +166,7 @@ public class Vehicle {
   }
 
   public void requestVehicleConfig() {
-    sendStringToDevice(String.format(Locale.US, "f\n"));
+    sendStringToDevice("f\n");
   }
 
   public void processVehicleConfig(String message) {
@@ -350,13 +350,13 @@ public class Vehicle {
     this.indicator = indicator;
     switch (indicator) {
       case -1:
-        sendStringToDevice(String.format(Locale.US, "i1,0\n"));
+        sendStringToDevice("i1,0\n");
         break;
       case 0:
-        sendStringToDevice(String.format(Locale.US, "i0,0\n"));
+        sendStringToDevice("i0,0\n");
         break;
       case 1:
-        sendStringToDevice(String.format(Locale.US, "i0,1\n"));
+        sendStringToDevice("i0,1\n");
         break;
     }
   }

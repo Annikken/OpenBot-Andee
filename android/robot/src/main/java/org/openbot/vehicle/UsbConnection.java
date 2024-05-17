@@ -52,14 +52,12 @@ public class UsbConnection {
     this.baudRate = baudRate;
     localBroadcastManager = LocalBroadcastManager.getInstance(this.context);
     usbManager = (UsbManager) context.getSystemService(Context.USB_SERVICE);
-    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-      usbPermissionIntent =
-          PendingIntent.getBroadcast(
-              this.context, 0, new Intent(ACTION_USB_PERMISSION), PendingIntent.FLAG_IMMUTABLE);
-    } else {
-      usbPermissionIntent =
-          PendingIntent.getBroadcast(this.context, 0, new Intent(ACTION_USB_PERMISSION), 0);
-    }
+//    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+    usbPermissionIntent = PendingIntent.getBroadcast(this.context, 0, new Intent(ACTION_USB_PERMISSION), PendingIntent.FLAG_IMMUTABLE);
+//    } else {
+//      usbPermissionIntent =
+//          PendingIntent.getBroadcast(this.context, 0, new Intent(ACTION_USB_PERMISSION), PendingIntent.FLAG_IMMUTABLE);//flags:0
+//    }
   }
 
   private final UsbSerialInterface.UsbReadCallback callback =
@@ -115,7 +113,8 @@ public class UsbConnection {
     localIntentFilter.addAction(UsbManager.ACTION_USB_DEVICE_DETACHED);
     localIntentFilter.addAction(ACTION_USB_PERMISSION);
     localBroadcastManager.registerReceiver(usbReceiver, localIntentFilter);
-    context.registerReceiver(usbReceiver, localIntentFilter);
+//    context.registerReceiver(usbReceiver, localIntentFilter);
+    context.registerReceiver(usbReceiver, localIntentFilter, Context.RECEIVER_NOT_EXPORTED);
 
     Map<String, UsbDevice> connectedDevices = usbManager.getDeviceList();
     if (!connectedDevices.isEmpty()) {

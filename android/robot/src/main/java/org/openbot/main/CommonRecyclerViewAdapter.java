@@ -68,23 +68,15 @@ public abstract class CommonRecyclerViewAdapter<T> extends RecyclerView.Adapter 
     MyViewHolder mHolder = (MyViewHolder) holder;
     if (mClickListener != null) {
       mHolder.itemView.setOnClickListener(
-          new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-              mClickListener.onItemClick(view, position);
-            }
-          });
+              view -> mClickListener.onItemClick(view, position));
     }
     if (mLongClickListener != null) {
       mHolder.itemView.setLongClickable(true);
       mHolder.itemView.setOnLongClickListener(
-          new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-              mLongClickListener.onItemLongClick(view, position);
-              return true;
-            }
-          });
+              view -> {
+                mLongClickListener.onItemLongClick(view, position);
+                return true;
+              });
     }
     bindDataToItem(mHolder, mDataList.get(position), position);
   }

@@ -189,7 +189,7 @@ public class NetworkServiceConnection implements ILocalConnection {
         public void onResolveFailed(NsdServiceInfo serviceInfo, int errorCode) {
           // Called when the resolve fails. Use the error code to debug.
           Timber.e("Resolve failed %s", errorCode);
-          Timber.e("serivce = %s", serviceInfo);
+          Timber.e("service = %s", serviceInfo);
 
           // re-try connecting
           runConnection();

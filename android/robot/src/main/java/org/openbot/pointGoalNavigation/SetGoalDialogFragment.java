@@ -27,7 +27,7 @@ public class SetGoalDialogFragment extends DialogFragment {
     binding = SetGoalDialogViewBinding.inflate(inflater, null, false);
 
     MaterialAlertDialogBuilder builder =
-        new MaterialAlertDialogBuilder(getActivity())
+        new MaterialAlertDialogBuilder(requireActivity())
             .setTitle("Set Goal")
             .setMessage(
                 "Mount the phone on the robot and specify a goal. The robot will try to reach the goal after pressing start.")

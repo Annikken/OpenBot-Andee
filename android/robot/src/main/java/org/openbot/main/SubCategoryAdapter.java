@@ -65,7 +65,7 @@ public class SubCategoryAdapter extends RecyclerView.Adapter<SubCategoryAdapter.
       binding
           .getRoot()
           .setOnClickListener(
-              v -> itemClickListener.onItemClick(mValues.get(getAdapterPosition())));
+              v -> itemClickListener.onItemClick(mValues.get(getAbsoluteAdapterPosition())));
     }
   }
 }

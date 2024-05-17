@@ -27,7 +27,7 @@ public class InfoDialogFragment extends DialogFragment {
     String message = getArguments().getString("message");
 
     MaterialAlertDialogBuilder builder =
-        new MaterialAlertDialogBuilder(getActivity())
+        new MaterialAlertDialogBuilder(requireActivity())
             .setTitle("Info")
             .setMessage(message)
             .setNegativeButton("Stop", (dialogInterface, i) -> setFragmentResult(false))

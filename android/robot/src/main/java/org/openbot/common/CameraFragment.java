@@ -155,7 +155,7 @@ public abstract class CameraFragment extends ControlsFragment {
                 requireActivity(), Constants.PERMISSION_CAMERA)) {
               PermissionUtils.showCameraPermissionsPreviewToast(requireActivity());
             } else {
-
+              PermissionUtils.showCameraPermissionsPreviewToast(requireActivity());
             }
           });
 

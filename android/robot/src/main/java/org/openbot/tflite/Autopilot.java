@@ -16,16 +16,6 @@ import timber.log.Timber;
 
 public class Autopilot extends Network {
 
-  /**
-   * Creates an autopilot policy with the provided configuration.
-   *
-   * @param activity The current Activity.
-   * @param model The model to use for classification.
-   * @param device The device to use for classification.
-   * @param numThreads The number of threads to use for classification.
-   * @return A detector with the desired configuration.
-   */
-
   /** A ByteBuffer to hold data, to be feed into Tensorflow Lite as inputs. */
   protected ByteBuffer cmdBuffer;
 

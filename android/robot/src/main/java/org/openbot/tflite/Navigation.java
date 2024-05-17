@@ -19,16 +19,6 @@ public class Navigation extends Network {
   private static final float IMAGE_MEAN = 0.0f;
   private static final float IMAGE_STD = 255.0f;
 
-  /**
-   * Creates a goal navigation policy with the provided configuration.
-   *
-   * @param activity The current Activity.
-   * @param model The model to use for classification.
-   * @param device The device to use for classification.
-   * @param numThreads The number of threads to use for classification.
-   * @return A detector with the desired configuration.
-   */
-
   /** A ByteBuffer to hold data, to be feed into Tensorflow Lite as inputs. */
   protected ByteBuffer goalBuffer = null;
 
