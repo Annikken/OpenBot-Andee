@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/white"
     android:orientation="vertical"
-    tools:context=".controller.ControllerMappingFragment">
+    tools:context="com.andee_openbot.controller.ControllerMappingFragment">
 
 
     <ImageView

@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".objectNav.ObjectNavFragment">
+    tools:context="com.andee_openbot.objectNav.ObjectNavFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <org.openbot.customview.OverlayView
+        <com.andee_openbot.customview.OverlayView
             android:id="@+id/tracking_overlay"
             android:layout_width="0dp"
             android:layout_height="match_parent"
