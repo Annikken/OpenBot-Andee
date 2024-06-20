@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <resources>
-  <string name="app_name">OpenBot</string>
-  <string name="activity_name">OpenBot</string>
+  <string name="app_name">Andee Bot</string>
+  <string name="activity_name">Andee Bot</string>
   <string name="description_info">Info</string>
   <string name="camera_error">This device doesn\'t support Camera2 API.</string>
   <string name="threads">Threads</string>
@@ -127,6 +127,8 @@
   <string name="front_leds">Front LEDs</string>
   <string name="bluetooth">Bluetooth</string>
   <string name="usb">USB</string>
+    <string name="privacy_policy">Privacy Policy</string>
+  <string name="privacy_title_settings">Settings</string>
   <string-array name="servers">
     <item>No server</item>
   </string-array>
@@ -188,4 +190,26 @@
     <item>Bluetooth</item>
     <item>USB</item>
   </string-array>
+  <!-- TODO: Remove or change this placeholder text -->
+    <string name="privacy_policy_main_body">
+      <font size="20"><b>Privacy Policy</b></font>\n
+        \n1. <b>The Information You Provide To Us.</b>
+        \nYour privacy is very important to us. We take it seriously and when you provide us with any personal information, we endeavour to keep it safe. Annikken Pte Ltd never sells your info with any third parties and takes all reasonable precautions to protect it.
+        \n\nl2. <b>Usage Tracking</b>
+        \nWe no longer use any analytics to collect data from the app or the store
+        \n\nl3. <b>When Do We Collect Information?</b>
+        \nWhen ordering or registering on our website, as appropriate, you may be asked to enter your name, email address, mailing address, phone number or other details to help you with your experience.
+        \n\nl4. <b>How do we use your information?</b>
+        \nWe may use the information we collect from you when you register, make a purchase, sign up for our newsletter, respond to a survey or marketing communication, surf the website, or use certain other site features in the following ways:
+        \n\n-To personalize user’s experience and to allow us to deliver the type of content and product offerings in which you are most interested.
+        \n\n-To improve our website in order to better serve you.
+        \n\n-To allow us to better service you in responding to your customer service requests.
+        \n\n-To administer a contest, promotion, survey or other site feature.
+        \n\n-To quickly process your transactions.
+        \n\n-To send periodic emails regarding your order or other products and services.
+        \n\n5. <b>Camera and others permissions (App)</b>
+        \nIn order to work correctly and to provide you with fantastic features, Annikken Andee app requires a bunch of permissions from your smartphone, like Camera access, Photo gallery, SMS and Location . Camera access is required for taking pictures and are stored into the photo gallery. Location is used for GPS function and SMS function to receive SMS when Annikken Andee is triggered.
+        \nWe do not store any personal information from the Annikken Andee app to any servers.
+        \n\nl6. <b>Cookies</b>
+        \nAnnikken uses cookies on our website to keep track of user session. No personal information is used to identity this session. Session information is used to display items in shopping cart.\nl\nl</string>
 </resources>

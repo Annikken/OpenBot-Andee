@@ -2,7 +2,15 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
     <uses-permission android:name="android.permission.CAMERA" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Devices running Android 13 (API level 33) or higher -->
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO" />
+
+    <!-- To handle the reselection within the app on devices running Android 14
+         or higher if your app targets Android 14 (API level 34) or higher.  -->
+    <uses-permission android:name="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" />
+
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
@@ -34,13 +42,13 @@
         android:allowBackup="false"
         android:icon="@drawable/ic_openbot"
         android:label="@string/app_name"
-        android:name=".OpenBotApplication"
+        android:name="com.andee_openbot.OpenBotApplication"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/ic_openbot"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".main.MainActivity"
+        <activity android:name="com.andee_openbot.main.MainActivity"
             android:launchMode="singleInstance"
             android:exported="true">
             <intent-filter>
@@ -54,7 +62,7 @@
                 android:resource="@xml/device_filter" />
         </activity>
         <activity
-            android:name=".original.DefaultActivity"
+            android:name="com.andee_openbot.original.DefaultActivity"
             android:label="@string/activity_name"
             android:noHistory="false">
             <!--
@@ -70,15 +78,15 @@
         </activity>
 
         <service
-            android:name=".logging.SensorService"
+            android:name="com.andee_openbot.logging.SensorService"
             android:enabled="true"
             android:launchMode="singleTask" />
 
-        <service android:name="net.majorkernelpanic.streaming.rtsp.RtspServer"/>
+<!--        <service android:name="net.majorkernelpanic.streaming.rtsp.RtspServer"/>-->
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="${applicationId}.provider"
+            android:authorities="com.andee_openbot.provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data

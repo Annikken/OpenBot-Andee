@@ -12,17 +12,18 @@ appVersioning {
 
 apply plugin: 'com.android.application'
 apply plugin: 'de.undercouch.download'
-apply plugin: 'com.google.firebase.crashlytics'
+//apply plugin: 'com.google.firebase.crashlytics'
 
 android {
-    compileSdkVersion 33
+    compileSdk 33
     buildToolsVersion '33.0.1'
     defaultConfig {
-        applicationId "org.openbot"
-        minSdkVersion 21
-        targetSdkVersion 32
+        applicationId "com.andee_openbot"
+        minSdkVersion 33
+        targetSdkVersion 33
         ndk {
-            abiFilters 'armeabi-v7a', 'arm64-v8a'
+            abiFilters "arm64-v8a", "armeabi-v7a", "x86", "x86_64"
+//            abiFilters 'armeabi-v7a', 'arm64-v8a'
         }
     }
     buildTypes {
@@ -57,7 +58,7 @@ android {
 project.ext.ASSET_DIR = projectDir.toString() + '/src/main/assets'
 apply from:'download.gradle'
 apply plugin: 'kotlin-android'
-apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms.google-services'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar','*.aar'])

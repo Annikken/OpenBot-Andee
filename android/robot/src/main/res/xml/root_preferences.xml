@@ -43,4 +43,14 @@
 
     </PreferenceCategory>
 
+    <PreferenceCategory>
+
+        <Preference
+            app:key="@string/privacy_policy"
+            app:summary="Tap here to read the privacy policy"
+            app:title="Privacy Policy"/>
+
+    </PreferenceCategory>
+
+
 </PreferenceScreen>
