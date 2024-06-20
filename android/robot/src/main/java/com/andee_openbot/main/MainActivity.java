@@ -128,7 +128,8 @@ public class MainActivity extends AppCompatActivity {
         (controller, destination, arguments) -> {
           if (destination.getId() == R.id.mainFragment
               || destination.getId() == R.id.settingsFragment
-              || destination.getId() == R.id.usbFragment) toolbar.setVisibility(View.VISIBLE);
+              || destination.getId() == R.id.usbFragment
+              || destination.getId() == R.id.privacyFragment) toolbar.setVisibility(View.VISIBLE);
           else toolbar.setVisibility(View.GONE);
         });
 

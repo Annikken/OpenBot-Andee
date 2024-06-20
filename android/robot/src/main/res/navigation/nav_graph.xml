@@ -106,4 +106,13 @@
         android:id="@+id/robotInfoFragment"
         android:name="com.andee_openbot.robot.RobotInfoFragment"
         android:label="RobotInfoFragment" />
+
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.andee_openbot.main.PrivacyPolicyFragment"
+        android:label="@string/privacy_policy" />
+    <action
+        android:id="@+id/open_privacy_fragment"
+        app:destination="@id/privacyFragment"
+        />
 </navigation>

@@ -5,16 +5,20 @@ import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AlertDialog;
 import androidx.lifecycle.ViewModelProvider;
+import androidx.navigation.Navigation;
 import androidx.preference.ListPreference;
+import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreferenceCompat;
 
 import com.andee_openbot.utils.Constants;
 import com.andee_openbot.utils.PermissionUtils;
+import com.google.android.material.button.MaterialButton;
 
 import org.openbot.R;
 
@@ -182,6 +186,15 @@ public class SettingsFragment extends PreferenceFragmentCompat {
             dialog.show();
             return false;
           });
+
+      Preference button = findPreference(getString(R.string.privacy_policy));
+      button.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+          @Override
+          public boolean onPreferenceClick(Preference preference) {
+              Navigation.findNavController(requireView()).navigate(R.id.open_privacy_fragment);
+              return true;
+          }
+      });
   }
 
   private void restartApp() {
