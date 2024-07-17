@@ -112,7 +112,7 @@ public class MainActivity extends AppCompatActivity {
     localBroadcastManager = LocalBroadcastManager.getInstance(this);
     localBroadcastManager.registerReceiver(localBroadcastReceiver, localIntentFilter);
 
-    registerReceiver(localBroadcastReceiver, localIntentFilter);
+    registerReceiver(localBroadcastReceiver, localIntentFilter, RECEIVER_EXPORTED);
 
     NavHostFragment navHostFragment =
         (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
