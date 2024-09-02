@@ -16,7 +16,7 @@ apply plugin: 'de.undercouch.download'
 
 android {
     compileSdk 34
-    buildToolsVersion '33.0.1'
+    buildToolsVersion '34.0.0'
     defaultConfig {
         applicationId "com.andee_openbot"
         minSdkVersion 34
@@ -51,7 +51,7 @@ android {
         abortOnError false
         checkReleaseBuilds false
     }
-    namespace 'org.openbot'
+    namespace 'com.andee_openbot'
 }
 
 // Download default models
