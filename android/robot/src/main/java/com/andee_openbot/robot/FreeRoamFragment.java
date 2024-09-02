@@ -18,9 +18,9 @@ import com.andee_openbot.utils.PermissionUtils;
 
 import java.util.Locale;
 import org.jetbrains.annotations.NotNull;
-import org.openbot.R;
+import com.andee_openbot.R;
 import com.andee_openbot.common.ControlsFragment;
-import org.openbot.databinding.FragmentFreeRoamBinding;
+import com.andee_openbot.databinding.FragmentFreeRoamBinding;
 
 import timber.log.Timber;
 

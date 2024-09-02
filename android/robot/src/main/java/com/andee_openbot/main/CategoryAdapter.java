@@ -10,8 +10,8 @@ import com.andee_openbot.utils.MarginItemDecoration;
 
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
-import org.openbot.R;
-import org.openbot.databinding.ItemCategoryBinding;
+import com.andee_openbot.R;
+import com.andee_openbot.databinding.ItemCategoryBinding;
 import com.andee_openbot.model.Category;
 import com.andee_openbot.model.SubCategory;
 

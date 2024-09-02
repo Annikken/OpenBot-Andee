@@ -36,9 +36,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 import org.jetbrains.annotations.NotNull;
-import org.openbot.R;
+import com.andee_openbot.R;
 import com.andee_openbot.common.CameraFragment;
-import org.openbot.databinding.FragmentObjectNavBinding;
+import com.andee_openbot.databinding.FragmentObjectNavBinding;
 
 import com.andee_openbot.env.ImageUtils;
 import com.andee_openbot.tflite.Detector;

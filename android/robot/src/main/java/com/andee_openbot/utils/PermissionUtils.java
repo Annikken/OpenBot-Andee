@@ -19,7 +19,7 @@ import android.widget.Toast;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.preference.PreferenceManager;
-import org.openbot.R;
+import com.andee_openbot.R;
 
 public class PermissionUtils {
 

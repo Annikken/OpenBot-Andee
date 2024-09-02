@@ -30,7 +30,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
-import org.openbot.R;
+import com.andee_openbot.R;
 import com.andee_openbot.env.Logger;
 
 public class SensorService extends Service implements SensorEventListener {

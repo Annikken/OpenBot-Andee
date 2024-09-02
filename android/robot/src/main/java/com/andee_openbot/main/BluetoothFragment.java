@@ -20,8 +20,8 @@ import com.ficat.easyble.BleManager;
 import com.ficat.easypermissions.EasyPermissions;
 import com.andee_openbot.OpenBotApplication;
 
-import org.openbot.R;
-import org.openbot.databinding.FragmentBluetoothBinding;
+import com.andee_openbot.R;
+import com.andee_openbot.databinding.FragmentBluetoothBinding;
 import com.andee_openbot.vehicle.Vehicle;
 
 public class BluetoothFragment extends Fragment {

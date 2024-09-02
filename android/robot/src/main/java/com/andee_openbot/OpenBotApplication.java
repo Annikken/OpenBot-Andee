@@ -6,7 +6,7 @@ import android.content.SharedPreferences;
 import androidx.annotation.NonNull;
 import androidx.preference.PreferenceManager;
 import org.jetbrains.annotations.NotNull;
-import org.openbot.BuildConfig;
+import com.andee_openbot.BuildConfig;
 
 import com.andee_openbot.vehicle.Vehicle;
 import timber.log.Timber;

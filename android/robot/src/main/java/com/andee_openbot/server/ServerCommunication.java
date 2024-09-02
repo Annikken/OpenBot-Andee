@@ -20,7 +20,7 @@ import java.util.TimerTask;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-import org.openbot.R;
+import com.andee_openbot.R;
 import timber.log.Timber;
 
 public class ServerCommunication {

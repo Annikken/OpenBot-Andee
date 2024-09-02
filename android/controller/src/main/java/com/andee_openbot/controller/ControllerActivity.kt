@@ -27,6 +27,7 @@ import com.andee_openbot.controller.customComponents.VideoViewWebRTC
 import org.openbot.controller.databinding.ActivityFullscreenBinding
 import com.andee_openbot.controller.utils.LocalEventBus
 import com.andee_openbot.controller.utils.Utils
+import org.openbot.controller.R
 import kotlin.system.exitProcess
 
 class ControllerActivity : /*AppCompat*/
@@ -187,24 +188,11 @@ class ControllerActivity : /*AppCompat*/
     }
 
     private fun hideSystemUI() {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             window.insetsController.let {
                 it?.systemBarsBehavior = WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
                 window.navigationBarColor = getColor(R.color.colorPrimaryDark)
                 it?.hide(WindowInsets.Type.systemBars())
             }
-        } else {
-            @Suppress("DEPRECATION")
-            window.decorView.systemUiVisibility = (
-                    View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
-                            or View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                            or View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                            or View.SYSTEM_UI_FLAG_FULLSCREEN
-                            or View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                            or View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN)
-            @Suppress("DEPRECATION")
-            window.addFlags(WindowManager.LayoutParams.FLAG_TRANSLUCENT_NAVIGATION)
-        }
     }
 
     @Override

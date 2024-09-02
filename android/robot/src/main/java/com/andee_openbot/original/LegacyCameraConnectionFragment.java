@@ -41,7 +41,7 @@ import com.andee_openbot.utils.CameraUtils;
 
 import java.io.IOException;
 import java.util.List;
-import org.openbot.R;
+import com.andee_openbot.R;
 
 @SuppressLint("ValidFragment")
 public class LegacyCameraConnectionFragment extends Fragment {

@@ -5,7 +5,7 @@ import android.widget.Toast;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.SwitchPreferenceCompat;
-import org.openbot.R;
+import com.andee_openbot.R;
 import com.andee_openbot.vehicle.Vehicle;
 import timber.log.Timber;
 

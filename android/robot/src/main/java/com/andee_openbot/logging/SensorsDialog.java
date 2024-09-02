@@ -18,8 +18,8 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import org.jetbrains.annotations.NotNull;
-import org.openbot.R;
-import org.openbot.databinding.DialogSensorsBinding;
+import com.andee_openbot.R;
+import com.andee_openbot.databinding.DialogSensorsBinding;
 import com.andee_openbot.env.SharedPreferencesManager;
 import com.andee_openbot.utils.Enums;
 

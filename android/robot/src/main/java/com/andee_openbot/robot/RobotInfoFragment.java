@@ -9,9 +9,9 @@ import androidx.annotation.Nullable;
 import androidx.navigation.Navigation;
 import java.util.Locale;
 import org.jetbrains.annotations.NotNull;
-import org.openbot.R;
+import com.andee_openbot.R;
 import com.andee_openbot.common.ControlsFragment;
-import org.openbot.databinding.FragmentRobotInfoBinding;
+import com.andee_openbot.databinding.FragmentRobotInfoBinding;
 
 public class RobotInfoFragment extends ControlsFragment {
   private FragmentRobotInfoBinding binding;

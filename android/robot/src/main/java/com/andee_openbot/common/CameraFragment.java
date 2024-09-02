@@ -31,7 +31,7 @@ import com.andee_openbot.utils.YuvToRgbConverter;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-import org.openbot.R;
+import com.andee_openbot.R;
 import timber.log.Timber;
 
 public abstract class CameraFragment extends ControlsFragment {

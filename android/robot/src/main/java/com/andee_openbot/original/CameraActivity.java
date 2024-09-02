@@ -101,7 +101,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 import java.util.stream.Collectors;
 import org.json.JSONObject;
-import org.openbot.R;
+import com.andee_openbot.R;
 
 import com.andee_openbot.tflite.Model;
 import com.andee_openbot.tflite.Network.Device;

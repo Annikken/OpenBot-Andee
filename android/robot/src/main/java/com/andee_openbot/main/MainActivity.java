@@ -26,7 +26,7 @@ import androidx.navigation.ui.NavigationUI;
 import com.andee_openbot.OpenBotApplication;
 import com.andee_openbot.utils.Constants;
 
-import org.openbot.R;
+import com.andee_openbot.R;
 
 import com.andee_openbot.vehicle.UsbConnection;
 import com.andee_openbot.vehicle.Vehicle;

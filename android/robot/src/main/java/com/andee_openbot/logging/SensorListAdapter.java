@@ -11,8 +11,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
-import org.openbot.R;
-import org.openbot.databinding.ItemSensorBinding;
+import com.andee_openbot.R;
+import com.andee_openbot.databinding.ItemSensorBinding;
 
 public class SensorListAdapter extends RecyclerView.Adapter<SensorListAdapter.ViewHolder> {
 

@@ -51,7 +51,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Locale;
 import java.util.concurrent.TimeUnit;
-import org.openbot.R;
+import com.andee_openbot.R;
 
 import com.andee_openbot.tflite.Autopilot;
 import com.andee_openbot.tflite.Detector;

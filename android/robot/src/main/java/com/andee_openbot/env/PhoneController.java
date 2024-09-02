@@ -12,7 +12,7 @@ import com.andee_openbot.customview.WebRTCSurfaceView;
 import com.andee_openbot.utils.CameraUtils;
 
 import org.json.JSONObject;
-import org.openbot.R;
+import com.andee_openbot.R;
 
 import timber.log.Timber;
 

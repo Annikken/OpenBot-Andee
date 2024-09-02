@@ -7,7 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.DialogFragment;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import org.openbot.databinding.SetGoalDialogViewBinding;
+import com.andee_openbot.databinding.SetGoalDialogViewBinding;
 
 public class SetGoalDialogFragment extends DialogFragment {
 

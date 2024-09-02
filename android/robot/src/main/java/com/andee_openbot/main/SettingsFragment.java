@@ -20,7 +20,7 @@ import com.andee_openbot.utils.Constants;
 import com.andee_openbot.utils.PermissionUtils;
 import com.google.android.material.button.MaterialButton;
 
-import org.openbot.R;
+import com.andee_openbot.R;
 
 public class SettingsFragment extends PreferenceFragmentCompat {
   private MainViewModel mViewModel;

@@ -14,7 +14,7 @@ import com.andee_openbot.utils.FileUtils;
 import java.io.File;
 import java.util.List;
 import org.jetbrains.annotations.NotNull;
-import org.openbot.databinding.ItemModelBinding;
+import com.andee_openbot.databinding.ItemModelBinding;
 import com.andee_openbot.tflite.Model;
 
 public class ModelAdapter extends RecyclerView.Adapter<ModelAdapter.ViewHolder> {

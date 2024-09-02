@@ -26,9 +26,9 @@ import com.andee_openbot.utils.Constants;
 import com.andee_openbot.utils.PermissionUtils;
 
 import java.io.IOException;
-import org.openbot.R;
+import com.andee_openbot.R;
 import com.andee_openbot.common.ControlsFragment;
-import org.openbot.databinding.FragmentPointGoalNavigationBinding;
+import com.andee_openbot.databinding.FragmentPointGoalNavigationBinding;
 import com.andee_openbot.main.MainViewModel;
 import com.andee_openbot.tflite.Model;
 import com.andee_openbot.tflite.Model.CLASS;

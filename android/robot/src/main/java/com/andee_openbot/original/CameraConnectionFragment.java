@@ -61,7 +61,7 @@ import com.andee_openbot.utils.CameraUtils;
 import java.util.Arrays;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
-import org.openbot.R;
+import com.andee_openbot.R;
 
 @SuppressLint("ValidFragment")
 public class CameraConnectionFragment extends Fragment {

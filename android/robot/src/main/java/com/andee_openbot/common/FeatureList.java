@@ -4,7 +4,7 @@ import com.andee_openbot.model.SubCategory;
 
 import java.util.ArrayList;
 import org.jetbrains.annotations.NotNull;
-import org.openbot.R;
+import com.andee_openbot.R;
 import com.andee_openbot.model.Category;
 
 public class FeatureList {

@@ -36,8 +36,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
-import org.openbot.R;
-import org.openbot.databinding.FragmentModelManagementBinding;
+import com.andee_openbot.R;
+import com.andee_openbot.databinding.FragmentModelManagementBinding;
 import com.andee_openbot.main.OnItemClickListener;
 import com.andee_openbot.tflite.Model;
 

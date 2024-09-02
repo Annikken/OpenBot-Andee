@@ -7,7 +7,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import com.ficat.easyble.BleDevice;
 import java.util.List;
-import org.openbot.R;
+import com.andee_openbot.R;
 
 public class ScanDeviceAdapter extends CommonRecyclerViewAdapter<BleDevice> {
   public ScanDeviceAdapter(

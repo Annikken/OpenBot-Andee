@@ -17,8 +17,8 @@ import com.google.android.material.internal.ViewUtils;
 import com.andee_openbot.env.GameController;
 import com.andee_openbot.utils.Constants;
 
-import org.openbot.R;
-import org.openbot.databinding.FragmentControllerMappingBinding;
+import com.andee_openbot.R;
+import com.andee_openbot.databinding.FragmentControllerMappingBinding;
 
 public class ControllerMappingFragment extends Fragment {
 

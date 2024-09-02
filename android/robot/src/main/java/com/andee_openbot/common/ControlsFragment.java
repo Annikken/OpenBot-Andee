@@ -43,7 +43,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import org.jetbrains.annotations.NotNull;
 import org.json.JSONObject;
-import org.openbot.R;
+import com.andee_openbot.R;
 
 import com.andee_openbot.vehicle.Control;
 
