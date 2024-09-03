@@ -48,6 +48,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
+
         <activity android:name="com.andee_openbot.main.MainActivity"
             android:launchMode="singleInstance"
             android:exported="true">
@@ -61,6 +62,7 @@
                 android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
                 android:resource="@xml/device_filter" />
         </activity>
+
         <activity
             android:name="com.andee_openbot.original.DefaultActivity"
             android:label="@string/activity_name"
@@ -74,8 +76,14 @@
                             android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"
                             android:resource="@xml/device_filter" />
             -->
-
         </activity>
+
+        <uses-library
+            android:name="libOpenCL.so"
+            android:required="false"/>
+        <uses-library
+            android:name="libOpenCL-pixel.so"
+            android:required="false"/>
 
         <service
             android:name="com.andee_openbot.logging.SensorService"

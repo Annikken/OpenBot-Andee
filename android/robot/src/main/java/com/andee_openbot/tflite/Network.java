@@ -23,6 +23,7 @@ import android.graphics.Bitmap;
 import android.graphics.RectF;
 import android.os.SystemClock;
 import android.util.Size;
+import android.widget.Toast;
 
 import com.andee_openbot.env.Logger;
 
@@ -87,7 +88,12 @@ public abstract class Network {
         break;
       case GPU:
         gpuDelegate = new GpuDelegate();
-        tfliteOptions.addDelegate(gpuDelegate);
+        if(gpuDelegate != null){
+          tfliteOptions.addDelegate(gpuDelegate);
+        }
+        else{
+          Toast.makeText(activity, "Unable to use GPU. Try again later", Toast.LENGTH_SHORT).show();
+        }
         break;
       case CPU:
         break;
