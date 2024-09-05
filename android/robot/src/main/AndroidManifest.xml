@@ -42,14 +42,14 @@
         android:allowBackup="false"
         android:icon="@drawable/ic_openbot"
         android:label="@string/app_name"
-        android:name="com.andee_openbot.OpenBotApplication"
+        android:name="com.andee_ai_openbot.OpenBotApplication"
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/ic_openbot"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
 
-        <activity android:name="com.andee_openbot.main.MainActivity"
+        <activity android:name="com.andee_ai_openbot.main.MainActivity"
             android:launchMode="singleInstance"
             android:exported="true">
             <intent-filter>
@@ -64,7 +64,7 @@
         </activity>
 
         <activity
-            android:name="com.andee_openbot.original.DefaultActivity"
+            android:name="com.andee_ai_openbot.original.DefaultActivity"
             android:label="@string/activity_name"
             android:noHistory="false">
             <!--
@@ -86,7 +86,7 @@
             android:required="false"/>
 
         <service
-            android:name="com.andee_openbot.logging.SensorService"
+            android:name="com.andee_ai_openbot.logging.SensorService"
             android:enabled="true"
             android:launchMode="singleTask" />
 
@@ -94,7 +94,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.andee_openbot.provider"
+            android:authorities="com.andee_ai_openbot.provider"
             android:exported="false"
             android:grantUriPermissions="true" >
             <meta-data

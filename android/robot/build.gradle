@@ -18,7 +18,7 @@ android {
     compileSdk 34
     buildToolsVersion '34.0.0'
     defaultConfig {
-        applicationId "com.andee_openbot"
+        applicationId "com.andee_ai_openbot"
         minSdkVersion 34
         targetSdkVersion 34
         ndk {
@@ -51,7 +51,7 @@ android {
         abortOnError false
         checkReleaseBuilds false
     }
-    namespace 'com.andee_openbot'
+    namespace 'com.andee_ai_openbot'
 }
 
 // Download default models

@@ -2,7 +2,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.andee_openbot.main.PrivacyPolicyFragment">
+    tools:context="com.andee_ai_openbot.main.PrivacyPolicyFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <ScrollView

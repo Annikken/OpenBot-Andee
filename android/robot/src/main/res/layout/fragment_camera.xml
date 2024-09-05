@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.andee_openbot.common.CameraFragment">
+    tools:context="com.andee_ai_openbot.common.CameraFragment">
 
     <androidx.camera.view.PreviewView
         android:id="@+id/viewFinder"

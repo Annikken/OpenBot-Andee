@@ -5,7 +5,7 @@
     android:layout_width="400dp"
     android:layout_gravity="end"
     android:layout_height="match_parent"
-    tools:context="com.andee_openbot.logging.LoggerFragment">
+    tools:context="com.andee_ai_openbot.logging.LoggerFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/loggerBottomSheet"
